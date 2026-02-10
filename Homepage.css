@@ -1,0 +1,98 @@
+:root{
+  --neon-blue: #00f3ff;
+}
+body{
+  background-color: #050b14;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  color: white;
+  background-image: 
+  linear-gradient(rgba(0, 243, 255, 0.05) 1px, transparent 1px),
+  linear-gradient(90deg, rgba(0, 243, 255, 0.05)1px, transparent 1px);
+  background-size: 30px 30px;
+  font-family:'Orbitron'
+}
+.calcHome{
+  clip-path: polygon(
+    10% 0,       /* Point 1: Top edge, slightly in */
+    100% 0,      /* Point 2: Top Right corner */
+    100% 90%,    /* Point 3: Right edge, near bottom */
+    90% 100%,    /* Point 4: Bottom edge, slightly in */
+    0 100%,      /* Point 5: Bottom Left corner */
+    0 10%    /* Point 6: Left edge, near top */
+  );
+  border-radius: 30px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+
+  filter: drop-shadow(0 0 10px var(--neon-blue));
+  background-color: rgba(10, 25, 47, 0.9);
+  border: 1px solid var(--neon-blue);
+  width: 350px;
+  height: 600px;
+}
+label{
+  text-align: left;
+  font-size: 1em;
+  width: 80%;
+  text-align: center;
+  margin-bottom: -15px;
+}
+.input-style{
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  width: 80%;
+  font-family: 'Orbitron';
+  border-bottom: 2px solid #333;
+  outline: none;
+  background: transparent;
+  color: white;
+}
+button{
+  cursor: pointer;
+}
+select{
+  cursor: pointer;
+}
+.input-style2{
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  width: 80%;
+  font-family: 'Orbitron';
+  border-bottom: 2px solid #333;
+  outline: none;
+  background-color: rgba(10, 25, 47, 0.9);
+  color: white;
+}
+input::placeholder{
+  color: white;
+}
+.radio-container{
+display: flex;
+
+gap: 20px;
+width: 80%;
+justify-content: center;
+}
+.radio-option{
+
+  gap: 5px;
+}
+.radio-option input{
+  cursor: pointer;
+}
+.radio-option label{
+  cursor: pointer;
+}
+#result{
+  margin: 0;
+  margin-top: -10px;
+}
