@@ -116,10 +116,10 @@ justify-content: center;
   
 }
 .weight-input{
-min-width: 230px;
+min-width: 219px;
 }
 .unit-selector{
-  width: 40px;
+  width: 50px;
   background-color: transparent;
   color: white;
   border: none;
@@ -132,4 +132,9 @@ min-width: 230px;
   background-color: rgba(10, 25, 47, 0.9);
   color: var(--neon-blue);
   cursor: pointer;
+}
+
+#height-ft-in input {
+  width: 50%;
+  text-align: center;
 }

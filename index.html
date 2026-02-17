@@ -20,7 +20,17 @@
           </select>
       </div>
         <input class="input-style" type="text" placeholder="Enter Your Age (years)" id="age">
-        <input class="input-style" type="type" placeholder="Enter Your Height" id="height">
+        <div class="lbs-select"> 
+          <input class="input-style weight-input" type="type" placeholder="Enter Your Height" id="height-cm">
+            <div id="height-ft-in" style="display: none; gap: 10px; width: 100%;">
+              <input class="input-style" type="type" placeholder="Ft" id="feet">
+              <input class="input-style" type="type" placeholder="In" id="inches">
+            </div>
+            <select class="unit-selector"name="" id="height-unit" onchange="toggleHeightInputs()">
+                <option class="options"value="cm">Cm</option>
+                <option class="options" value="ft">Ft/In</option>
+            </select>  
+        </div> 
         <label>Gender:</label>
         <div class="radio-container">
           <div class="radio-option">

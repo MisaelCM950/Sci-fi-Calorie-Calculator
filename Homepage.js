@@ -1,14 +1,39 @@
 /*$$BMR = (10 \times \text{weight}) + (6.25 \times \text{height}) - (5 \times \text{age}) + \text{GenderOffset}$$*/
 
+function toggleHeightInputs(){
+  const unit= document.getElementById("height-unit").value;
+  const cmInput = document.getElementById("height-cm");
+  const ftInputContainer = document.getElementById("height-ft-in");
+  
+  if(unit === "ft"){
+    cmInput.style.display = "none";
+    ftInputContainer.style.display ="flex";
+
+  } else{
+    cmInput.style.display = "block";
+    ftInputContainer.style.display = "none";
+  }
+
+}
 function calculateCalories(){
   let weight = parseFloat(document.getElementById("weight").value);
-  const height = parseFloat(document.getElementById("height").value);
   const age = parseFloat(document.getElementById("age").value);
   const activityMultiplier = parseFloat(document.getElementById("activity").value);
   const gender = document.querySelector('input[name="gender"]:checked').value;
 
-
+  const unitHeight = document.getElementById("height-unit").value;
   const unit = document.getElementById("unit").value;
+
+  let height = 0;
+  if(unitHeight === "cm"){
+    height = parseFloat(document.getElementById("height-cm").value);
+  } else{
+    const feet = parseFloat(document.getElementById("feet").value);
+    const inches = parseFloat(document.getElementById("inches").value);
+
+    const safeInches = isNaN(inches) ? 0 : inches;
+    height = (feet * 30.48) + (safeInches * 2.54);
+  }
 
 
   if(isNaN(weight) || isNaN(height) || isNaN(age)){
