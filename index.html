@@ -50,9 +50,26 @@
             <option value="1.725">Very active (6-7 days/week)</option>
           </select>
         <button onclick="calculateCalories();" class="input-style">Calculate</button>
-        <h2 id="result"></h2>
-    
-    </div>
+          <div class="result-container" id="result-box" style="display: none;">
+            <h3 id="result">Est. Daily Calories</h3>
+            <table class="sci-fi-table">
+              <tr>
+                <th>Goal</th>
+                <th>Calories</th>
+              </tr>
+              
+              <tr>
+                <td style="color: #ff4d4d;">Weight Loss (-0.5kg/wk)</td> <td id="cal-loss"></td>
+              </tr>
+              <tr>
+                <td style="color: var(--neon-blue);">Maintenance</td> <td id="cal-main"></td>
+              </tr>
+              <tr>
+                <td style="color: #00ff88;">Weight Gain(+0.5kg/wk)</td> <td id="cal-gain"></td>
+              </tr>
+            </table>
+          </div>
+      </div>
     <div>
         <h3>What is this calculator?</h3>
         <p>This terminal calculates your daily energy requirements based on the Miffling-St Jeor equation. Optimized for human biological sustainment in off-world colonies</p>

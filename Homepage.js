@@ -46,6 +46,16 @@ function calculateCalories(){
   }
     let bmr = (10 * weight) + (6.25 * height) - (5 * age)
 
+    const maintenance = Math.round(bmr * activityMultiplier);
+    const loss = maintenance - 500;
+    const gain = maintenance + 500;
+    
+    document.getElementById("result-box").style.display = "block";
+
+    document.getElementById("cal-loss").innerText = loss;
+    document.getElementById("cal-main").innerText = maintenance;
+    document.getElementById("cal-gain").innerText = gain;
+
   if(gender === "male"){
     bmr = bmr + 5;
   }

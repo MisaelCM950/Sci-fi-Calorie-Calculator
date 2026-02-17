@@ -13,7 +13,7 @@ body{
   linear-gradient(rgba(0, 243, 255, 0.05) 1px, transparent 1px),
   linear-gradient(90deg, rgba(0, 243, 255, 0.05)1px, transparent 1px);
   background-size: 30px 30px;
-  font-family:'Orbitron'
+  font-family:'Orbitron';
 }
 .calcHome{
   clip-path: polygon(
@@ -137,4 +137,32 @@ min-width: 219px;
 #height-ft-in input {
   width: 50%;
   text-align: center;
+}
+.result-container{
+  margin-top: 20px;
+  width: 100%;
+  text-align: center;
+}
+.sci-fi-table{
+  width: 100%;
+  border-collapse:collapse;
+  margin-top: 10px;
+  font-size: 0.9rem;
+  font-family: 'Orbitron';
+}
+.sci-fi-table th, .sci-fi-table td{
+  border: 1px solid rgba(0, 243, 255, 0.5);
+  padding: 10px;
+  text-align: left;
+}
+.sci-fi-table th{
+  background-color: rgba(0, 243, 255, 0.1);
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.sci-fi-table td:last-child{
+  text-align: right;
+  font-weight: bold;
+  font-size: 1.1rem;
 }
