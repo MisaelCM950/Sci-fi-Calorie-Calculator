@@ -13,7 +13,10 @@ body{
   linear-gradient(rgba(0, 243, 255, 0.05) 1px, transparent 1px),
   linear-gradient(90deg, rgba(0, 243, 255, 0.05)1px, transparent 1px);
   background-size: 30px 30px;
-  font-family:'Orbitron';
+  font-family:'Orbitron', sans-serif;
+  position: relative;
+  padding-bottom: 100px;
+  box-sizing: border-box;
 }
 .calcHome{
   clip-path: polygon(
@@ -52,7 +55,7 @@ label{
   border-radius: 10px;
   border: none;
   width: 80%;
-  font-family: 'Orbitron';
+  font-family: 'Orbitron', sans-serif;
   border-bottom: 2px solid var(--neon-blue);
   outline: none;
   background: transparent;
@@ -69,7 +72,7 @@ select{
   border-radius: 10px;
   border: none;
   width: 80%;
-  font-family: 'Orbitron';
+  font-family: 'Orbitron', sans-serif;
   border-bottom: 2px solid var(--neon-blue);;
   outline: none;
   background-color: rgba(10, 25, 47, 0.9);
@@ -128,7 +131,7 @@ min-width: 219px;
   color: white;
   border: none;
   border-bottom: 2px solid var(--neon-blue);
-  font-family: 'Orbitron';
+  font-family: 'Orbitron', sans-serif;
   outline: none;
   cursor: pointer;
 }
@@ -155,7 +158,7 @@ min-width: 219px;
   border-collapse:collapse;
   margin-top: 10px;
   font-size: 0.9rem;
-  font-family: 'Orbitron';
+  font-family: 'Orbitron', sans-serif;
 }
 .sci-fi-table th, .sci-fi-table td{
   border: 1px solid rgba(0, 243, 255, 0.5);
@@ -205,14 +208,15 @@ min-width: 219px;
 }
 .macro-legend p{
 margin: 5px 0;
-font-family: 'Orbitron';
+font-family: 'Orbitron', sans-serif;
 text-transform: uppercase;
 font-size: 0.9rem;
 letter-spacing: 1px;
 }
+
 .loading-text{
   color: var(--neon-blue);
-  font-family: 'Orbitron';
+  font-family: 'Orbitron', sans-serif;
   font-size: 1.1rem;
   text-align: center;
   margin-top: 20px;
@@ -223,4 +227,49 @@ letter-spacing: 1px;
 0% {opacity: 1;}
 50% {opacity: 0.3;}
 100% {opacity: 1;}
+}
+.cyber-footer{
+  width: 100%;
+  margin-top: -60px;
+  padding: 20px 0;
+  border-top: 1px solid rgba(0, 243, 255, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+
+  position: absolute;
+  bottom: 0;
+}
+.footer-links{
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.footer-links a{
+  color: white;
+  text-decoration: none;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: 0.3s;
+}
+.footer-links a:hover{
+  color: var(--neon-blue);
+  text-shadow: 0 0 10px var(--neon-blue);
+}
+.copyright{
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.4);
+  font-family: 'Obitron', sans-serif;
+  margin: 0;
+}
+#home-button{
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 0;
+  right: 90%;
 }
