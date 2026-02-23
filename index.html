@@ -12,6 +12,7 @@
 <body>
   <div class="information">
     <div class="calcHome">
+      <img src="Calculator.png" style="width: 150px; margin: 0; margin-top: -50px;" alt="">
       <div class="lbs-select">
         <input class="input-style weight-input" type="text" placeholder="Enter Your Weight" id="weight"> 
           <select class="unit-selector" name="" id="unit">
@@ -50,6 +51,9 @@
             <option value="1.725">Very active (6-7 days/week)</option>
           </select>
         <button onclick="calculateCalories();" class="input-style">Calculate</button>
+          <div id="loading-screen" class="loading-text" style="display: none;">
+              CALCULATING BIOLOGICAL REQUIREMENTS
+          </div>
           <div class="result-container" id="result-box" style="display: none;">
             <h3 id="result">Est. Daily Calories</h3>
             <table class="sci-fi-table">
@@ -65,7 +69,7 @@
                 <td style="color: var(--neon-blue);">Maintenance</td> <td id="cal-main"></td>
               </tr>
               <tr>
-                <td style="color: #00ff88;">Weight Gain(+0.5kg/wk)</td> <td id="cal-gain"></td>
+                <td style="color: #00ff88;">Weight Gain (+0.5kg/wk)</td> <td id="cal-gain"></td>
               </tr>
             </table>
           </div>
@@ -75,6 +79,26 @@
         <p>This terminal calculates your daily energy requirements based on the Miffling-St Jeor equation. Optimized for human biological sustainment in off-world colonies</p>
     </div>
   </div>
+
+  <div class="macro-dashboard">
+      <h3>Macro Allocation</h3>
+
+      <select name="" id="macro-goal" class="unit-selector unit-selector1" onchange="updateMacroChart();">
+        <option value="main" class="options">Maintenance</option>
+        <option value="loss" class="options">Weight Loss</option>
+        <option value="gain" class="options">Weight Gain</option>
+      </select>
+      <div class="chart-container">
+        <div id="pie-chart" class="pie-chart"></div>
+        <div class="macro-legend">
+          <p style="color: #ff0055;">Protein (30%): <span id="protein-g">0</span>g</p>
+          <p style="color: #00f3ff;">Carbs (45%): <span id="carbs-g">0</span>g</p>
+          <p style="color: #00ff88;">Fats (25%): <span id="fats-g">0</span>g</p>
+
+        </div>
+      </div>
+    </div>
+
   <script src="Homepage.js"></script>
 </body>
 </html>

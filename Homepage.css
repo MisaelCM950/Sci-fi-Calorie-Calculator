@@ -34,8 +34,11 @@ body{
   filter: drop-shadow(0 0 10px var(--neon-blue));
   background-color: rgba(10, 25, 47, 0.9);
   border: 1px solid var(--neon-blue);
-  width: 350px;
-  height: 600px;
+  width: 550px;
+  height: auto;
+  min-height: 900px;
+  padding-bottom: 50px;
+  padding-top: 30px;
 }
 label{
   text-align: left;
@@ -95,6 +98,7 @@ justify-content: center;
 #result{
   margin: 0;
   margin-top: -10px;
+  justify-content: center;
 }
 .information{
   display: flex;
@@ -112,7 +116,7 @@ justify-content: center;
   flex-direction: row;
   justify-content: center;
   gap: 10px;
-  width: 80%;
+  width: 84%;
   
 }
 .weight-input{
@@ -127,6 +131,9 @@ min-width: 219px;
   font-family: 'Orbitron';
   outline: none;
   cursor: pointer;
+}
+.unit-selector1{
+  min-width: 150px;
 }
 .options{
   background-color: rgba(10, 25, 47, 0.9);
@@ -165,4 +172,55 @@ min-width: 219px;
   text-align: right;
   font-weight: bold;
   font-size: 1.1rem;
+}
+.macro-dashboard{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: -350px;
+  gap: 20px;
+  width: 300px;
+}
+.chart-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+#pie-chart{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+
+  background: conic-gradient(
+    #ff0055 0% 30%, 
+    #00f3ff 30% 75%, 
+    #00ff88 75% 100%
+    );
+
+  box-shadow: 0 0 20px rgba(0, 243, 255, 0.5);
+  border: 2px solid var(--neon-blue);
+  -webkit-mask: radial-gradient(transparent 50%, black 51%);
+  mask: radial-gradient(transparent 50%, black 51%);
+}
+.macro-legend p{
+margin: 5px 0;
+font-family: 'Orbitron';
+text-transform: uppercase;
+font-size: 0.9rem;
+letter-spacing: 1px;
+}
+.loading-text{
+  color: var(--neon-blue);
+  font-family: 'Orbitron';
+  font-size: 1.1rem;
+  text-align: center;
+  margin-top: 20px;
+  text-shadow: 0 0 10px var(--neon-blue);
+  animation: pulse 1s infinite;
+}
+@keyframes pulse {
+0% {opacity: 1;}
+50% {opacity: 0.3;}
+100% {opacity: 1;}
 }
