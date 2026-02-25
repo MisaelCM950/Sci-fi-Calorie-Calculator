@@ -6,12 +6,13 @@
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="Homepage.css">
   <meta charset="UTF-8">
+  <link rel="icon" href="Calculator.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Calorie Calculator</title>
 </head>
 <body>
   <a href="index.html"><img src="Calculator.png" alt="" id="home-button"></a>
-  <div class="information">
+  <div class="dashboard-layout">
     <div class="calcHome">
       <img src="Calculator.png" style="width: 150px; margin: 0; margin-top: -50px;" alt="">
       <div class="lbs-select">
@@ -75,11 +76,6 @@
             </table>
           </div>
       </div>
-    <div>
-        <h3>What is this calculator?</h3>
-        <p>This terminal calculates your daily energy requirements based on the Miffling-St Jeor equation. Optimized for human biological sustainment in off-world colonies</p>
-    </div>
-  </div>
 
   <div class="macro-dashboard">
       <h3>Macro Allocation</h3>
@@ -91,14 +87,38 @@
       </select>
       <div class="chart-container">
         <div id="pie-chart" class="pie-chart"></div>
-        <div class="macro-legend">
-          <p style="color: #ff0055;">Protein (30%): <span id="protein-g">0</span>g</p>
-          <p style="color: #00f3ff;">Carbs (45%): <span id="carbs-g">0</span>g</p>
-          <p style="color: #00ff88;">Fats (25%): <span id="fats-g">0</span>g</p>
+          <div class="macro-legend">
+            <p style="color: #ff0055;">Protein (30%): <span id="protein-g">0</span>g</p>
+            <p style="color: #00f3ff;">Carbs (45%): <span id="carbs-g">0</span>g</p>
+            <p style="color: #00ff88;">Fats (25%): <span id="fats-g">0</span>g</p>
 
+          </div>
         </div>
       </div>
-    </div>
+        <div class="legal-container homepage-article" style="margin-top: 50px;">
+    <h2>Optimizing Human Biology: The Science Behind the Terminal</h2>
+    
+    <p>Welcome to the future of biological sustainment. The Cyber-Nutrient Terminal is a precision tool engineered for gym-goers, athletes, and individuals serious about optimizing their body composition through accurate data tracking.</p>
+
+    <h3 style="color: var(--neon-blue); margin-top: 30px;">The Mifflin-St Jeor Equation</h3>
+    <p>Calculating your Basal Metabolic Rate (BMR) is the foundation of any successful physical transformation. Rather than relying on outdated formulas, this terminal utilizes the <strong>Mifflin-St Jeor equation</strong>. Recognized by clinical dietitians and sports nutritionists as one of the most highly accurate predictive equations, it determines the baseline energy your body requires to function at rest.</p>
+
+    <h3 style="color: var(--neon-blue); margin-top: 30px;">Dynamic Macronutrient Allocation</h3>
+    <p>A major flaw in basic fitness applications is their reliance on static percentage splits (such as 30% Protein, 40% Carbs, 30% Fats). As caloric intake increases during a bulking protocol, strict percentages force an unnecessarily high protein intake.</p>
+    <p>To solve this, our terminal utilizes a dynamic, bodyweight-based algorithm for its Hypertrophy Protocol:</p>
+    <ul style="color: #e0e0e0; line-height: 1.8;">
+      <li><strong>Protein:</strong> Locked at 2.2 grams per kilogram of body weight to maximize muscle protein synthesis without overwhelming the digestive system.</li>
+      <li><strong>Fats:</strong> Allocated at 25% of total caloric intake to ensure optimal hormone regulation and joint health.</li>
+      <li><strong>Carbohydrates:</strong> The remaining energy is allocated to carbs, providing the primary fuel source required for high-intensity resistance training.</li>
+    </ul>
+
+    <h3 style="color: var(--neon-blue); margin-top: 30px;">How to Execute Your Protocol</h3>
+    <p>Operating the terminal is straightforward. Input your physical metrics and select your current activity level. Once the terminal processes your data, you can toggle between three specific goals: <strong>Maintenance</strong>, <strong>Weight Loss (Deficit)</strong>, and <strong>Weight Gain (Surplus)</strong>. The integrated pie chart will dynamically adjust your required macronutrients in real-time, allowing you to instantly build your daily meal plans around accurate targets.</p>
+  </div>
+  </div>
+  
+
+
     <footer class="cyber-footer">
       <div class="footer-links">
         <a href="about.html">About</a>
