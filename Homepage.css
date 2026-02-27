@@ -314,3 +314,23 @@ margin-bottom: 20px;
 font-family: sans-serif;
 color: #e0e0e0;
 }
+@media (max-width: 768px){
+  .calcHome{
+    width: 90%;
+    min-height: auto;
+    padding-bottom: 30px;
+  }
+  .weight-input{
+    min-width: 0;
+    width: 100%;
+  }
+  .lbs-select{
+    width: 90%;
+  }
+  .dashboard-layout{
+    gap: 30px;
+  }
+  .homepage-article{
+    max-width: 90%;
+  }
+}
