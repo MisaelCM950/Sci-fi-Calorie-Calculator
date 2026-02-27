@@ -321,7 +321,7 @@ color: #e0e0e0;
 }
 @media (max-width: 768px){
   .calcHome{
-    order: 1;
+    order: 2;
     width: 90%;
     min-height: auto;
     padding-bottom: 30px;
@@ -332,7 +332,7 @@ color: #e0e0e0;
     display: contents;
   }
   .macro-dashboard{
-    order: 2;
+    order: 3;
     margin: 0 auto;
   }
   .weight-input{
@@ -347,7 +347,7 @@ color: #e0e0e0;
     flex-direction: column;
   }
   .homepage-article{
-    order: 3;
+    order: 4;
     max-width: 100%;
     margin: 20px auto 50px auto;
   }
@@ -355,11 +355,15 @@ color: #e0e0e0;
     padding: 20px;
     box-sizing: border-box;
   }
+  #logo-link{
+    order: 1;
+    align-self:center;
+    margin-bottom: 10px;
+  }
   #home-button{
-    width: 50px;
-    height: auto;
-    padding: 0;
-
-    margin: -15px auto 0 195px;
+    position: static;
+    width: 120px;
+    margin: 0;
+    
   }
 }
