@@ -198,10 +198,14 @@ min-width: 219px;
   gap: 20px;
 }
 .homepage-article{
-  margin: 0;
+  margin: 150px;
   max-width: 450px;
   height: fit-content;
-  transform: translate(-20%, 0);
+}
+.left-column{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 #pie-chart{
   width: 200px;
@@ -300,6 +304,7 @@ letter-spacing: 1px;
   border-radius: 15px;
   padding: 40px;
   box-shadow: 0 0 15px rgba(0, 243, 255, 0.1);
+  box-sizing: border-box;
 }
 .legal-container h2{
   color: var(--neon-blue);
@@ -330,12 +335,10 @@ color: #e0e0e0;
     gap: 30px;
   }
   .homepage-article{
-    max-width: 90%;
-    margin: 0 auto;
-    transform: none;
+    max-width: 100%;
+    margin: 20px auto 0 auto;
   }
   .legal-container{
-    box-sizing: border-box;
     padding: 20px;
   }
 }
