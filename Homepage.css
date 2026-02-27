@@ -198,8 +198,8 @@ min-width: 219px;
   gap: 20px;
 }
 .homepage-article{
-  margin: 150px;
-  max-width: 450px;
+  margin: 50px;
+  max-width: 550px;
   height: fit-content;
 }
 .left-column{
@@ -321,9 +321,18 @@ color: #e0e0e0;
 }
 @media (max-width: 768px){
   .calcHome{
+    order: 1;
     width: 90%;
     min-height: auto;
     padding-bottom: 30px;
+    margin: 0 auto;
+  }
+  .left-column{
+    display: contents;
+  }
+  .macro-dashboard{
+    order: 2;
+    margin: 0 auto;
   }
   .weight-input{
     width: 100%;
@@ -333,12 +342,20 @@ color: #e0e0e0;
   }
   .dashboard-layout{
     gap: 30px;
+    display: flex;
+    flex-direction: column;
   }
   .homepage-article{
+    order: 3;
     max-width: 100%;
-    margin: 20px auto 0 auto;
+    margin: 20px auto 20px auto;
   }
   .legal-container{
     padding: 20px;
+    box-sizing: border-box;
+  }
+  #home-button{
+    width: 60px;
+    height: auto;
   }
 }
