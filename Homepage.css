@@ -321,7 +321,6 @@ color: #e0e0e0;
     padding-bottom: 30px;
   }
   .weight-input{
-    min-width: 0;
     width: 100%;
   }
   .lbs-select{
@@ -332,5 +331,11 @@ color: #e0e0e0;
   }
   .homepage-article{
     max-width: 90%;
+    margin: 0 auto;
+    transform: none;
+  }
+  .legal-container{
+    box-sizing: border-box;
+    padding: 20px;
   }
 }
