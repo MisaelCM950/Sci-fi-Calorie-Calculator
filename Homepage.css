@@ -348,14 +348,15 @@ color: #e0e0e0;
   .homepage-article{
     order: 3;
     max-width: 100%;
-    margin: 20px auto 20px auto;
+    margin: 20px auto 50px auto;
   }
   .legal-container{
     padding: 20px;
     box-sizing: border-box;
   }
   #home-button{
-    width: 60px;
+    width: 50px;
     height: auto;
+    padding: 0;
   }
 }
