@@ -223,6 +223,9 @@ min-width: 380px;
   -webkit-mask: radial-gradient(transparent 50%, black 51%);
   mask: radial-gradient(transparent 50%, black 51%);
 }
+.testclass{
+  width: 73%;
+}
 .macro-legend p{
 margin: 5px 0;
 font-family: 'Orbitron', sans-serif;
