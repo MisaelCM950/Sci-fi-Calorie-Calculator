@@ -121,7 +121,7 @@ justify-content: center;
   
 }
 .weight-input{
-min-width: 219px;
+min-width: 380px;
 }
 .unit-selector{
   width: 50px;
@@ -336,7 +336,7 @@ color: #e0e0e0;
     margin: 0 auto;
   }
   .weight-input{
-    width: 100%;
+    min-width: 100px;
   }
   .lbs-select{
     width: 90%;
@@ -364,6 +364,6 @@ color: #e0e0e0;
     position: static;
     width: 120px;
     margin: 0;
-    
+
   }
 }
