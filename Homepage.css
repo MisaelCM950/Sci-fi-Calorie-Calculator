@@ -286,10 +286,14 @@
     font-family: 'Obitron', sans-serif;
     margin: 0;
   }
-  #cal-home-button{
+  .tool-icon{
     width: 150px;
     height: auto;
     transition: 0.3s;
+  }
+  .tool-icon:hover{
+    filter: drop-shadow(0 0 10px var(--neon-blue));
+    cursor: pointer;
   }
   .tools{
     display: flex;
@@ -394,9 +398,9 @@
       margin-bottom: 10px;
     }
     #home-button{
-      position: static;
+     
       width: 120px;
-      margin: 0;
+      margin-top: -10px;
 
     }
     .main{
@@ -405,7 +409,7 @@
     #hub-logo{
       order: 1;
     }
-    #cal-home-button{
+    .tools{
       order: 2;
     }
   }
